@@ -1,0 +1,49 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+Item -> TodoList
+App <-- TodoListFile
+TodoList -> TodoListFile
+TodoList -> App
+Controller <-- App
+
+class Controller {
+    Controls javafx UI
+}
+
+class Item {
+    String description
+    LocalDate dueDate
+    Boolean isComplete
+}
+
+class TodoList {
+    String title
+    ArrayList<Item> items
+    ArrayList<Item> GetCompleted()
+    ArrayList<Item> GetIncomplete()
+}
+
+class TodoListFile {
+    TodoList GetTodoList(String path)
+    ArrayList<TodoList> GetTodoLists(String dir)
+    void ExportTodoList(TodoList todoList, String dir)
+    void ExportTodoLists(ArrayList<TodoList> todoLists, String dir)
+}
+
+class App {
+    ArrayList<TodoList> todoLists
+    TodoList currentTodoList
+
+    void AddEmptyTodoList()
+    void DeleteCurrentList()
+    void SelectTodoList(TodoList listToSelect)
+    void EditCurrentListTitle(String newTitle)
+    void AddItemToCurrent()
+    void RemoveItemFromCurrent(Item item)
+
+    start()
+    main()
+}
+
+@enduml

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ucf.assignments.Controller">
+    <children>
+      <SplitPane dividerPositions="0.2668231611893584" prefHeight="160.0" prefWidth="200.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" pickOnBounds="false" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <SplitPane orientation="VERTICAL" prefHeight="718.0" prefWidth="340.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                           <children>
+                              <Label layoutX="14.0" layoutY="29.0" prefHeight="32.0" prefWidth="185.0" text="Your Todo Lists">
+                                 <font>
+                                    <Font name="System Bold" size="22.0" />
+                                 </font>
+                              </Label>
+                              <Button layoutX="283.0" layoutY="32.0" mnemonicParsing="false" text="Save" />
+                              <Button contentDisplay="CENTER" layoutX="231.0" layoutY="32.0" mnemonicParsing="false" text="Load" textAlignment="CENTER" />
+                              <Button alignment="BASELINE_LEFT" defaultButton="true" layoutX="14.0" layoutY="82.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="311.0" text="Bucket list" textAlignment="CENTER" />
+                              <Button alignment="BASELINE_LEFT" layoutX="14.0" layoutY="107.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="311.0" text="college homework" textAlignment="CENTER" />
+                              <Button alignment="BASELINE_LEFT" layoutX="14.0" layoutY="132.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="311.0" text="movies to watch" textAlignment="CENTER" />
+                              <Button alignment="BASELINE_LEFT" layoutX="14.0" layoutY="157.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="311.0" text="project plan" textAlignment="CENTER" />
+                              <Button alignment="BASELINE_LEFT" layoutX="14.0" layoutY="182.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="311.0" text="monday errands" textAlignment="CENTER" />
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" pickOnBounds="false" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                    <Label fx:id="label" alignment="CENTER" text="yo" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  <SplitPane orientation="VERTICAL" prefHeight="718.0" prefWidth="932.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                           <children>
+                              <TitledPane animated="false" layoutX="84.0" layoutY="-49.0" text="untitled" />
+                              <CheckBox layoutX="15.0" layoutY="114.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="797.0" selected="true" text="Go Skydiving">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox layoutX="15.0" layoutY="135.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="797.0" selected="true" text="Visit Dubai">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox layoutX="15.0" layoutY="156.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="797.0" selected="true" text="Solve the theory of everything">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox layoutX="15.0" layoutY="177.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="797.0" text="Watch an entire baseball game without falling asleep">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox layoutX="15.0" layoutY="198.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="797.0" selected="true" text="Finish this assignment before 11:59pm">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox layoutX="15.0" layoutY="219.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="797.0" selected="true" text="Invent time travel">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox layoutX="15.0" layoutY="240.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="797.0" text="Center a div">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox layoutX="15.0" layoutY="261.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="797.0" selected="true" text="Properly insert a usb stick on the first try">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </CheckBox>
+                              <Button contentDisplay="CENTER" layoutX="866.0" layoutY="112.0" mnemonicParsing="false" scaleX="0.9" scaleY="0.9" text="Delete" textAlignment="CENTER" />
+                              <DatePicker layoutX="680.0" layoutY="112.0" promptText="2021-31-10" scaleX="0.9" scaleY="0.9" />
+                              <DatePicker layoutX="680.0" layoutY="133.0" promptText="2021-31-10" scaleX="0.9" scaleY="0.9" />
+                              <Button contentDisplay="CENTER" layoutX="866.0" layoutY="133.0" mnemonicParsing="false" scaleX="0.9" scaleY="0.9" text="Delete" textAlignment="CENTER" />
+                              <DatePicker layoutX="680.0" layoutY="154.0" promptText="2021-31-10" scaleX="0.9" scaleY="0.9" />
+                              <Button contentDisplay="CENTER" layoutX="866.0" layoutY="154.0" mnemonicParsing="false" scaleX="0.9" scaleY="0.9" text="Delete" textAlignment="CENTER" />
+                              <DatePicker layoutX="680.0" layoutY="175.0" promptText="2021-31-10" scaleX="0.9" scaleY="0.9" />
+                              <Button contentDisplay="CENTER" layoutX="866.0" layoutY="175.0" mnemonicParsing="false" scaleX="0.9" scaleY="0.9" text="Delete" textAlignment="CENTER" />
+                              <DatePicker layoutX="680.0" layoutY="196.0" promptText="2021-31-10" scaleX="0.9" scaleY="0.9" />
+                              <Button contentDisplay="CENTER" layoutX="866.0" layoutY="196.0" mnemonicParsing="false" scaleX="0.9" scaleY="0.9" text="Delete" textAlignment="CENTER" />
+                              <DatePicker layoutX="680.0" layoutY="217.0" promptText="2021-31-10" scaleX="0.9" scaleY="0.9" />
+                              <Button contentDisplay="CENTER" layoutX="866.0" layoutY="217.0" mnemonicParsing="false" scaleX="0.9" scaleY="0.9" text="Delete" textAlignment="CENTER" />
+                              <DatePicker layoutX="680.0" layoutY="238.0" promptText="2021-31-10" scaleX="0.9" scaleY="0.9" />
+                              <Button contentDisplay="CENTER" layoutX="866.0" layoutY="238.0" mnemonicParsing="false" scaleX="0.9" scaleY="0.9" text="Delete" textAlignment="CENTER" />
+                              <DatePicker layoutX="680.0" layoutY="259.0" promptText="2021-31-10" scaleX="0.9" scaleY="0.9" />
+                              <Button contentDisplay="CENTER" layoutX="866.0" layoutY="259.0" mnemonicParsing="false" scaleX="0.9" scaleY="0.9" text="Delete" textAlignment="CENTER" />
+                              <Label layoutX="24.0" layoutY="28.0" prefHeight="32.0" prefWidth="185.0" text="Bucket list">
+                                 <font>
+                                    <Font name="System Bold" size="22.0" />
+                                 </font>
+                              </Label>
+                              <Button contentDisplay="CENTER" layoutX="744.0" layoutY="32.0" mnemonicParsing="false" text="Add Todo" textAlignment="CENTER" />
+                              <Button contentDisplay="CENTER" layoutX="813.0" layoutY="32.0" mnemonicParsing="false" text="Export" textAlignment="CENTER" />
+                              <Button contentDisplay="CENTER" layoutX="140.0" layoutY="32.0" mnemonicParsing="false" text="Edit" textAlignment="CENTER" />
+                              <Button contentDisplay="CENTER" layoutX="863.0" layoutY="32.0" mnemonicParsing="false" text="Delete" textAlignment="CENTER" />
+                              <Label layoutX="14.0" layoutY="81.0" prefHeight="32.0" prefWidth="60.0" text="Filter:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <ChoiceBox fx:id="choiceBox" layoutX="55.0" layoutY="85.0" prefWidth="150.0" />
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+    </children>
+</StackPane>
