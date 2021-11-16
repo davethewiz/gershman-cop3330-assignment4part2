@@ -8,29 +8,42 @@ package ucf.assignments;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.*;
 
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+
 public class ItemTest
 {
+    // Create a new item
+    // Create a new string for the new description
+    // Run the edit description function
+    // Assert that the current description is equal to the new description
     @Test
     public void EditDescTest() {
-        // Create a new item
-        // Create a new string for the new description
-        // Run the edit description function
-        // Assert that the current description is equal to the new description
+        Item item = new Item("test", new GregorianCalendar(2020, Calendar.DECEMBER, 7).getTime(), false);
+        item.SetDescription("testtest");
+        Assertions.assertEquals("testtest", item.description.get());
     }
 
+    // Create new item
+    // Create a new date for the new date
+    // Run the edit due date function
+    // Assert that the current date is equal to the new date
     @Test
     public void EditDueDateTest() {
-        // Create new item
-        // Create a new date for the new date
-        // Run the edit due date function
-        // Assert that the current date is equal to the new date
+        Item item = new Item("test", new GregorianCalendar(2020, Calendar.DECEMBER, 7).getTime(), false);
+        var newDate = new GregorianCalendar(2021, Calendar.MARCH, 14).getTime();
+        item.SetDueDate(newDate);
+        Assertions.assertEquals(newDate, item.dueDate);
     }
 
+    // Create a new item
+    // Create a boolean for the new complete status
+    // Run the mark complete function
+    // Assert that the current status is equal to the new complete status
     @Test
     public void MarkCompleteTest() {
-        // Create a new item
-        // Create a boolean for the new complete status
-        // Run the mark complete function
-        // Assert that the current status is equal to the new complete status
+        Item item = new Item("test", new GregorianCalendar(2020, Calendar.DECEMBER, 7).getTime(), false);
+        item.SetIsComplete(true);
+        Assertions.assertEquals(true, item.isComplete.get());
     }
 }

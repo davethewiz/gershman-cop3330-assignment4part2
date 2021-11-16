@@ -98,9 +98,11 @@ public class Controller implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         todoList = new TodoList();
 
+        // set up filter box to contain necessary options
         filterBox.getItems().addAll("All", "Complete", "Incomplete");
         filterBox.getSelectionModel().select("All");
 
+        // Initialize isCompleted Column in table to work with booleans and modification with a checkbox
         isCompletedColumn.setCellValueFactory(cellData -> cellData.getValue().isComplete);
         isCompletedColumn.setCellFactory(cf -> new CheckBoxTableCell<>());
         isCompletedColumn.setOnEditCommit(
@@ -110,6 +112,7 @@ public class Controller implements Initializable {
                 }
         );
 
+        // Initialize the description column to work with strings and modification with a textField
         descriptionColumn.setCellValueFactory(cellData -> cellData.getValue().description);
         descriptionColumn.setCellFactory(TextFieldTableCell.forTableColumn());
         descriptionColumn.setOnEditCommit(
@@ -119,6 +122,7 @@ public class Controller implements Initializable {
                 }
         );
 
+        // Initialize the due date column to work with Date types and modification with a DatePicker
         dueDateColumn.setCellValueFactory(new PropertyValueFactory<Item, Date>("dueDate"));
         dueDateColumn.setCellFactory(cf -> new DateEditingCell());
         dueDateColumn.setOnEditCommit(
@@ -128,7 +132,7 @@ public class Controller implements Initializable {
                 }
         );
 
-        tableView.setEditable(true);
-        tableView.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
+        tableView.setEditable(true); // allows the table to be editable
+        tableView.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE); //allows a user to select multiple items
     }
 }

@@ -32,4 +32,16 @@ public class Item {
     public Boolean getIsComplete() {
         return isComplete.get();
     }
+
+    public void SetDescription(String desc) {
+        description = new SimpleStringProperty(desc);
+    }
+
+    public void SetDueDate(Date date) {
+        dueDate = date;
+    }
+
+    public void SetIsComplete(Boolean complete) {
+        isComplete = new SimpleBooleanProperty(complete);
+    }
 }
