@@ -5,6 +5,7 @@
 
 package ucf.assignments;
 
+import java.io.File;
 import java.net.URL;
 import java.time.LocalDate;
 import java.time.Month;
@@ -21,6 +22,8 @@ import javafx.scene.control.*;
 import javafx.scene.control.cell.CheckBoxTableCell;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.control.cell.TextFieldTableCell;
+import javafx.stage.DirectoryChooser;
+import javafx.stage.FileChooser;
 
 public class Controller implements Initializable {
 
@@ -34,6 +37,22 @@ public class Controller implements Initializable {
     @FXML private TableColumn<Item, Date> dueDateColumn;
 
     private TodoList todoList;
+
+    public void ImportTodoListFromFile() throws Exception {
+        FileChooser fileChooser = new FileChooser();
+
+        File file = fileChooser.showOpenDialog(App.mainStage);
+
+        todoList = TodoListFile.GetTodoList(file.getPath());
+        UpdateTable();
+    }
+
+    public void ExportTodoListToFile() throws Exception {
+        DirectoryChooser dirChooser = new DirectoryChooser();
+        File dir = dirChooser.showDialog(App.mainStage);
+        System.out.println(dir.getPath());
+        TodoListFile.ExportTodoList(todoList, dir.getPath());
+    }
 
     public void ClearTableItems() {
         todoList.ClearItems();

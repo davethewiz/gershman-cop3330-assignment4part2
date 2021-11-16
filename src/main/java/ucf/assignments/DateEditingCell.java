@@ -3,6 +3,7 @@ package ucf.assignments;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TableCell;
 
+import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
@@ -49,7 +50,8 @@ class DateEditingCell extends TableCell<Item, Date> {
                 setText(null);
                 setGraphic(datePicker);
             } else {
-                setText(getDate().format(DateTimeFormatter.ofLocalizedDate(FormatStyle.MEDIUM)));
+                SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+                setText(dateFormat.format(item));
                 setGraphic(null);
             }
         }

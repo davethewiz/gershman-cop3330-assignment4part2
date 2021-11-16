@@ -19,9 +19,12 @@ public class TodoList {
         items.clear();
     }
 
-    // REMOVE given item from item list
     public void RemoveItem(Item item) {
         items.remove(item);
+    }
+
+    public void AddItem(Item item) {
+        items.add(item);
     }
 
     // INITIALIZE new list of items

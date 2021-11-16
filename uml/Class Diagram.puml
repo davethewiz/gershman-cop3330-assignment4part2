@@ -1,9 +1,0 @@
-@startuml
-
-Item -> TodoList
-App <-- TodoListFile
-TodoList -> TodoListFile
-TodoList -> App
-Controller <-- App
-
-@enduml

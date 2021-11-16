@@ -16,6 +16,7 @@ import java.util.Objects;
 
 
 public class App extends Application {
+    public static Stage mainStage;
 
     @Override
     public void start(Stage stage) throws Exception {
@@ -27,6 +28,7 @@ public class App extends Application {
         stage.setTitle("Todo List App");
         stage.setScene(scene);
         stage.show();
+        mainStage = stage;
     }
 
     public static void main(String[] args) {
