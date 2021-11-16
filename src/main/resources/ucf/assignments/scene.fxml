@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.TitledPane?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.StackPane?>
@@ -13,118 +15,39 @@
 
 <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ucf.assignments.Controller">
     <children>
-      <SplitPane dividerPositions="0.2668231611893584" prefHeight="160.0" prefWidth="200.0">
-        <items>
-          <AnchorPane minHeight="0.0" minWidth="0.0" pickOnBounds="false" prefHeight="160.0" prefWidth="100.0">
-               <children>
-                  <SplitPane orientation="VERTICAL" prefHeight="718.0" prefWidth="340.0">
-                    <items>
-                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
-                           <children>
-                              <Label layoutX="14.0" layoutY="29.0" prefHeight="32.0" prefWidth="185.0" text="Your Todo Lists">
-                                 <font>
-                                    <Font name="System Bold" size="22.0" />
-                                 </font>
-                              </Label>
-                              <Button layoutX="283.0" layoutY="32.0" mnemonicParsing="false" text="Save" />
-                              <Button contentDisplay="CENTER" layoutX="231.0" layoutY="32.0" mnemonicParsing="false" text="Load" textAlignment="CENTER" />
-                              <Button alignment="BASELINE_LEFT" defaultButton="true" layoutX="14.0" layoutY="82.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="311.0" text="Bucket list" textAlignment="CENTER" />
-                              <Button alignment="BASELINE_LEFT" layoutX="14.0" layoutY="107.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="311.0" text="college homework" textAlignment="CENTER" />
-                              <Button alignment="BASELINE_LEFT" layoutX="14.0" layoutY="132.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="311.0" text="movies to watch" textAlignment="CENTER" />
-                              <Button alignment="BASELINE_LEFT" layoutX="14.0" layoutY="157.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="311.0" text="project plan" textAlignment="CENTER" />
-                              <Button alignment="BASELINE_LEFT" layoutX="14.0" layoutY="182.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="311.0" text="monday errands" textAlignment="CENTER" />
-                           </children>
-                        </AnchorPane>
-                    </items>
-                  </SplitPane>
-               </children>
-            </AnchorPane>
-          <AnchorPane minHeight="0.0" minWidth="0.0" pickOnBounds="false" prefHeight="160.0" prefWidth="100.0">
-               <children>
-                    <Label fx:id="label" alignment="CENTER" text="yo" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
-                  <SplitPane orientation="VERTICAL" prefHeight="718.0" prefWidth="932.0">
-                    <items>
-                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
-                           <children>
-                              <TitledPane animated="false" layoutX="84.0" layoutY="-49.0" text="untitled" />
-                              <CheckBox layoutX="15.0" layoutY="114.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="797.0" selected="true" text="Go Skydiving">
-                                 <font>
-                                    <Font size="15.0" />
-                                 </font>
-                              </CheckBox>
-                              <CheckBox layoutX="15.0" layoutY="135.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="797.0" selected="true" text="Visit Dubai">
-                                 <font>
-                                    <Font size="15.0" />
-                                 </font>
-                              </CheckBox>
-                              <CheckBox layoutX="15.0" layoutY="156.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="797.0" selected="true" text="Solve the theory of everything">
-                                 <font>
-                                    <Font size="15.0" />
-                                 </font>
-                              </CheckBox>
-                              <CheckBox layoutX="15.0" layoutY="177.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="797.0" text="Watch an entire baseball game without falling asleep">
-                                 <font>
-                                    <Font size="15.0" />
-                                 </font>
-                              </CheckBox>
-                              <CheckBox layoutX="15.0" layoutY="198.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="797.0" selected="true" text="Finish this assignment before 11:59pm">
-                                 <font>
-                                    <Font size="15.0" />
-                                 </font>
-                              </CheckBox>
-                              <CheckBox layoutX="15.0" layoutY="219.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="797.0" selected="true" text="Invent time travel">
-                                 <font>
-                                    <Font size="15.0" />
-                                 </font>
-                              </CheckBox>
-                              <CheckBox layoutX="15.0" layoutY="240.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="797.0" text="Center a div">
-                                 <font>
-                                    <Font size="15.0" />
-                                 </font>
-                              </CheckBox>
-                              <CheckBox layoutX="15.0" layoutY="261.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="797.0" selected="true" text="Properly insert a usb stick on the first try">
-                                 <font>
-                                    <Font size="15.0" />
-                                 </font>
-                              </CheckBox>
-                              <Button contentDisplay="CENTER" layoutX="866.0" layoutY="112.0" mnemonicParsing="false" scaleX="0.9" scaleY="0.9" text="Delete" textAlignment="CENTER" />
-                              <DatePicker layoutX="680.0" layoutY="112.0" promptText="2021-31-10" scaleX="0.9" scaleY="0.9" />
-                              <DatePicker layoutX="680.0" layoutY="133.0" promptText="2021-31-10" scaleX="0.9" scaleY="0.9" />
-                              <Button contentDisplay="CENTER" layoutX="866.0" layoutY="133.0" mnemonicParsing="false" scaleX="0.9" scaleY="0.9" text="Delete" textAlignment="CENTER" />
-                              <DatePicker layoutX="680.0" layoutY="154.0" promptText="2021-31-10" scaleX="0.9" scaleY="0.9" />
-                              <Button contentDisplay="CENTER" layoutX="866.0" layoutY="154.0" mnemonicParsing="false" scaleX="0.9" scaleY="0.9" text="Delete" textAlignment="CENTER" />
-                              <DatePicker layoutX="680.0" layoutY="175.0" promptText="2021-31-10" scaleX="0.9" scaleY="0.9" />
-                              <Button contentDisplay="CENTER" layoutX="866.0" layoutY="175.0" mnemonicParsing="false" scaleX="0.9" scaleY="0.9" text="Delete" textAlignment="CENTER" />
-                              <DatePicker layoutX="680.0" layoutY="196.0" promptText="2021-31-10" scaleX="0.9" scaleY="0.9" />
-                              <Button contentDisplay="CENTER" layoutX="866.0" layoutY="196.0" mnemonicParsing="false" scaleX="0.9" scaleY="0.9" text="Delete" textAlignment="CENTER" />
-                              <DatePicker layoutX="680.0" layoutY="217.0" promptText="2021-31-10" scaleX="0.9" scaleY="0.9" />
-                              <Button contentDisplay="CENTER" layoutX="866.0" layoutY="217.0" mnemonicParsing="false" scaleX="0.9" scaleY="0.9" text="Delete" textAlignment="CENTER" />
-                              <DatePicker layoutX="680.0" layoutY="238.0" promptText="2021-31-10" scaleX="0.9" scaleY="0.9" />
-                              <Button contentDisplay="CENTER" layoutX="866.0" layoutY="238.0" mnemonicParsing="false" scaleX="0.9" scaleY="0.9" text="Delete" textAlignment="CENTER" />
-                              <DatePicker layoutX="680.0" layoutY="259.0" promptText="2021-31-10" scaleX="0.9" scaleY="0.9" />
-                              <Button contentDisplay="CENTER" layoutX="866.0" layoutY="259.0" mnemonicParsing="false" scaleX="0.9" scaleY="0.9" text="Delete" textAlignment="CENTER" />
-                              <Label layoutX="24.0" layoutY="28.0" prefHeight="32.0" prefWidth="185.0" text="Bucket list">
-                                 <font>
-                                    <Font name="System Bold" size="22.0" />
-                                 </font>
-                              </Label>
-                              <Button contentDisplay="CENTER" layoutX="744.0" layoutY="32.0" mnemonicParsing="false" text="Add Todo" textAlignment="CENTER" />
-                              <Button contentDisplay="CENTER" layoutX="813.0" layoutY="32.0" mnemonicParsing="false" text="Export" textAlignment="CENTER" />
-                              <Button contentDisplay="CENTER" layoutX="140.0" layoutY="32.0" mnemonicParsing="false" text="Edit" textAlignment="CENTER" />
-                              <Button contentDisplay="CENTER" layoutX="863.0" layoutY="32.0" mnemonicParsing="false" text="Delete" textAlignment="CENTER" />
-                              <Label layoutX="14.0" layoutY="81.0" prefHeight="32.0" prefWidth="60.0" text="Filter:">
-                                 <font>
-                                    <Font size="14.0" />
-                                 </font>
-                              </Label>
-                              <ChoiceBox fx:id="choiceBox" layoutX="55.0" layoutY="85.0" prefWidth="150.0" />
-                           </children>
-                        </AnchorPane>
-                    </items>
-                  </SplitPane>
-               </children>
-            </AnchorPane>
-        </items>
-      </SplitPane>
+        <Label fx:id="label" alignment="CENTER" text="yo" />
+    <AnchorPane minHeight="0.0" minWidth="0.0" onMouseDragged="#UpdateTable" onMouseEntered="#UpdateTable" prefHeight="742.0" prefWidth="1310.0">
+         <children>
+            <TitledPane animated="false" layoutX="84.0" layoutY="-49.0" text="untitled" />
+            <Label layoutX="24.0" layoutY="28.0" prefHeight="32.0" prefWidth="185.0" text="Todo List" AnchorPane.leftAnchor="10.0">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <Button contentDisplay="CENTER" layoutX="137.0" layoutY="32.0" mnemonicParsing="false" text="Import" textAlignment="CENTER" AnchorPane.leftAnchor="125.0" />
+            <Button fx:id="clearButton" contentDisplay="CENTER" layoutX="1227.0" layoutY="83.0" mnemonicParsing="false" onAction="#ClearTableItems" text="Clear All" textAlignment="CENTER" AnchorPane.rightAnchor="10.0" />
+            <Label layoutX="21.0" layoutY="79.0" prefHeight="32.0" prefWidth="60.0" text="Filter:" AnchorPane.leftAnchor="10.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="filterBox" layoutX="62.0" layoutY="83.0" onContextMenuRequested="#UpdateTable" onInputMethodTextChanged="#UpdateTable" onMouseClicked="#UpdateTable" onMouseExited="#UpdateTable" onMouseMoved="#UpdateTable" onMouseReleased="#UpdateTable" prefWidth="150.0" AnchorPane.leftAnchor="55.0" />
+            <Button contentDisplay="CENTER" layoutX="189.0" layoutY="32.0" mnemonicParsing="false" text="Export" textAlignment="CENTER" AnchorPane.leftAnchor="185.0" />
+            <TableView fx:id="tableView" layoutX="20.0" layoutY="150.0" prefHeight="521.0" prefWidth="1260.0" AnchorPane.bottomAnchor="59.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="140.0">
+              <columns>
+                <TableColumn fx:id="isCompletedColumn" onEditCommit="#UpdateTable" onEditStart="#UpdateTable" prefWidth="87.0" resizable="false" text="Completed" />
+                <TableColumn fx:id="descriptionColumn" prefWidth="1030.0" resizable="false" text="Description" />
+                  <TableColumn fx:id="dueDateColumn" prefWidth="142.0" resizable="false" text="Due Date" />
+              </columns>
+            </TableView>
+            <Button layoutX="984.0" layoutY="675.0" mnemonicParsing="false" onAction="#AddNewItemToTable" text="Add" AnchorPane.bottomAnchor="10.0" />
+            <DatePicker fx:id="newItemDueDate" layoutX="800.0" layoutY="675.0" AnchorPane.bottomAnchor="10.0" />
+            <TextField fx:id="newItemDescription" layoutX="20.0" layoutY="675.0" prefHeight="25.0" prefWidth="772.0" text="New Todo Description..." AnchorPane.bottomAnchor="10.0" />
+            <Button fx:id="deleteButton" contentDisplay="CENTER" layoutX="1158.0" layoutY="83.0" mnemonicParsing="false" onAction="#DeleteSelectedItems" text="Delete Selected" textAlignment="CENTER" AnchorPane.rightAnchor="80.0" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </AnchorPane>
     </children>
 </StackPane>

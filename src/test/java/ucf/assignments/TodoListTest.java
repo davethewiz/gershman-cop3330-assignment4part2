@@ -5,12 +5,34 @@
 
 package ucf.assignments;
 
-import org.junit.*;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.*;
 
 public class TodoListTest
 {
+    @Test
+    public void ClearItemsTest() {
+
+    }
+
+    @Test
+    public void AddItemTest() {
+        // Create a new todolist with some empty data
+        // Create a new item with some default data
+        // Add it to the apps list of todolists
+        // Directly add the previously created item to the original todolist
+        // Run the add item to current function
+        // Assert that the current todolist has this item
+    }
+
+    @Test
+    public void RemoveItemTest() {
+        // Create a new todolist with some items and default data
+        // Create a new item with default data
+        // Remove the item using the function
+        // Assert that the item is no longer within the todolist
+    }
+
     @Test
     public void GetAllItemsTest() {
         // Create a new todolist

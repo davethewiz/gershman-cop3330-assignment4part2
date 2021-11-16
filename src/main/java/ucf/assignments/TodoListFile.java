@@ -16,25 +16,10 @@ public class TodoListFile {
         return new TodoList();
     }
 
-    public static ArrayList<TodoList> GetTodoLists(String dir) {
-        // Create a new list of TodoLists
-        // Iterate through all files in given directory path
-        //      Find any json files containing TdooList data
-        //      Deseralize them into TodoList objects
-        //      Add these objects to the new list of TodoLists
-        // Return the new list of TodoLists
-        return new ArrayList<>();
-    }
-
     public static void ExportTodoList(TodoList todoList, String dir) {
         // Serialize the todoList into a json string
         // Locate the directory provided in 'dir'
         // Create a new json file with the json string in the directory
         // Title this file the same title as the todolist
-    }
-
-    public static void ExportTodoLists(ArrayList<TodoList> todoLists, String dir) {
-        // Iterate through all todoList in TodoLists
-        //      Execute the above ExportTodoList(...) on each todolist in the same directory
     }
 }

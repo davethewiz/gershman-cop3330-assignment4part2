@@ -5,36 +5,11 @@
 
 package ucf.assignments;
 
-import org.junit.*;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.*;
 
 public class AppTest
 {
-    @Test
-    public void AddNewTodoListTest()
-    {
-        // Create a new todoList with empty data
-        // Get the size of the todolist list of the app
-        // Run the AddEmptyTodoList() function in the app
-        // Assert that the size of the todolist app is one greater than it was before
-        // Assert that there exists an empty data todolist in the TodoList list
-    }
-
-    @Test
-    public void RemoveTodoListTest() {
-        // Create a new todolist with some default data (make sure it is not empty)
-        // Add this todolist to the App list of todoLists
-        // Run the RemoveTodoList function
-        // Assert that the previously created todolist no longer exists in the todolist list in the app
-    }
-
-    @Test
-    public void EditTodolistTitleTest() {
-        // Create a new todolist with some empty data
-        // Run the edit todolist title function using a String such as "TestTitle"
-        // Assert that the todolist has this new title
-    }
 
     @Test
     public void AddItemTest() {
